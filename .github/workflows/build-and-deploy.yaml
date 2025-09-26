@@ -14,7 +14,7 @@ env:
   AZURE_WEBAPP_PACKAGE_PATH: "./testproj/publish" # path to your web app project
   DOTNET_VERSION: "8.0.x" # specify the .NET version to use
   SOLUTION_PATH: "testProj.sln" # solution file
-  API_PROJECT_PATH: "./testProj" # path to the API project file
+  API_PROJECT_PATH: "./" # path to the API project file
   PUBLISH_DIR: "./publish" # directory to publish the project
 
 
