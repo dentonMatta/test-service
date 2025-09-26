@@ -60,7 +60,7 @@ jobs:
       - name: Download Artifact # download the artifact uploaded in the previous job
         uses: actions/download-artifact@v4 # in built action to download artifacts
         with:
-          name: webapp # name of the artifact to download    
+          name: webapp-publish # name of the artifact to download    
           path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }} # path to download the artifact
 
       - name: Deploy to Azure Web App # deploy the downloaded artifact to Azure Web App
