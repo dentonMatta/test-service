@@ -13,9 +13,9 @@ env:
   AZURE_WEBAPP_NAME: "test-service" # replace with your Azure Web App name
   AZURE_WEBAPP_PACKAGE_PATH: "./testproj/publish" # path to your web app project
   DOTNET_VERSION: "8.0.x" # specify the .NET version to use
-  SOLUTION_PATH: "./testproj/testProj.sln" # solution file
+  SOLUTION_PATH: "testProj.sln" # solution file
   API_PROJECT_PATH: "./testProj" # path to the API project file
-  PUBLISH_DIR: "./testproj/publish" # directory to publish the project
+  PUBLISH_DIR: "./publish" # directory to publish the project
 
 
 # define a sequence of tasks to be executed
