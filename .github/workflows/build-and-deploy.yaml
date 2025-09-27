@@ -11,7 +11,7 @@ on:
 # global environment variables
 env: 
   AZURE_WEBAPP_NAME: "test-service" # replace with your Azure Web App name
-  AZURE_WEBAPP_PACKAGE_PATH: "./test-service/publish" # path to your web app project
+  AZURE_WEBAPP_PACKAGE_PATH: "./test-service/publish/" # path to your web app project
   DOTNET_VERSION: "8.0.x" # specify the .NET version to use
   SOLUTION_PATH: "testProj.sln" # solution file
   API_PROJECT_PATH: "./" # path to the API project file
