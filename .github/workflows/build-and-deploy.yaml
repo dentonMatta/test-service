@@ -42,7 +42,7 @@ jobs:
         run: dotnet test ${{ env.SOLUTION_PATH }} --configuration Release --no-restore --no-build --verbosity normal # run tests for the solution . NOTE --verbosity normal is used to get detailed test results in the logs
 
       - name: Publish the project #take the project and prepare it for deployment
-        run: dotnet publish ${{ env.API_PROJECT_PATH }} --configuration Release --no-restore --no-build --property:PublishDir=${{ env.PUBLISH_DIR }} # publish the API project to the specified directory
+        run: dotnet publish ${{ env.SOLUTION_PATH }} --configuration Release --no-restore --no-build --property:PublishDir=${{ env.PUBLISH_DIR }} # publish the API project to the specified directory
 
       - name: Publish Artifact # upload the published project as an artifact
         uses: actions/upload-artifact@v4 # in built action to upload artifacts
